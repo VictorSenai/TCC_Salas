@@ -1,0 +1,89 @@
+/*
+ * CSS com tema Google Classroom (Prioridade Azul)
+ * Estética limpa, profissional e focada em educação.
+ */
+
+/* ====================================
+   1. Estilos Globais e do Corpo (body)
+   ==================================== */
+body {
+    font-family: 'Roboto', 'Arial', sans-serif; /* A fonte Roboto é usada pelo Google */
+    background-color: #f0f3f5; /* Fundo muito claro, quase branco, para um look "app" */
+    color: #3c4043; /* Cor de texto padrão (Cinza escuro do Google) */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding-top: 60px; /* Mais espaço no topo */
+}
+
+/* ====================================
+   2. Container Principal (section)
+   ==================================== */
+section {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 8px; /* Bordas suaves */
+    /* Imita a elevação sutil dos cartões do Google Material Design */
+    box-shadow: 0 1px 3px 0 rgba(60, 64, 67, 0.3), 0 4px 8px 3px rgba(60, 64, 67, 0.15); 
+    width: 100%;
+    max-width: 500px; /* Um pouco mais compacto para focar nas ações */
+    text-align: center;
+}
+
+/* ====================================
+   3. Título (.title)
+   ==================================== */
+.title {
+    font-size: 30px;
+    font-weight: 500; /* Peso da fonte mais leve, típico do Google */
+    color: #1a73e8; /* Azul primário do Google */
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    /* Remove a borda para um look mais limpo, mas mantém a cor de destaque */
+    /* border-bottom: 3px solid #1a73e8; */
+    letter-spacing: normal;
+}
+
+/* ====================================
+   4. Botões de Ação (.button)
+   ==================================== */
+/* Ajuste de Margem para o layout vertical de botões */
+section button {
+    margin: 12px 0; /* Mais espaçamento vertical entre os botões */
+    display: block;
+    width: 100%; /* Botões preenchem a largura do container */
+    box-sizing: border-box;
+    text-transform: uppercase; /* Deixa o texto do botão em caixa alta */
+}
+
+.button {
+    /* Cor de fundo primária: Azul Google */
+    background-color: #1a73e8; 
+    color: white;
+    padding: 12px 20px; 
+    border: none;
+    border-radius: 4px; /* Bordas levemente arredondadas, Material Design style */
+    cursor: pointer;
+    font-size: 14px; /* Fonte um pouco menor, para parecer mais com um link/ação */
+    font-weight: 600;
+    letter-spacing: 0.25px;
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+    /* Remove a sombra inicial para um look mais plano */
+    box-shadow: none; 
+}
+
+/* Efeito Hover: Mais escuro e elevação sutil */
+.button:hover {
+    background-color: #1669c5; /* Azul ligeiramente mais escuro */
+    /* Adiciona a sombra sutil do Material Design ao interagir */
+    box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3), 0 2px 6px 2px rgba(60, 64, 67, 0.15);
+}
+
+/* Efeito Ativo (ao clicar) */
+.button:active {
+    background-color: #0b55aa;
+    box-shadow: none;
+}
