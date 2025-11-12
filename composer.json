@@ -1,0 +1,14 @@
+{
+    "name": "vito/project",
+    "description": "VITO Project",
+    "type": "project",
+    "require": {
+        "php": ">=7.4"
+    },
+    "require-dev": {},
+    "autoload": {
+        "psr-4": {
+            "Vito\\": "src/"
+        }
+    }
+}
